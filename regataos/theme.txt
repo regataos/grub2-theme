@@ -69,13 +69,10 @@ terminal-border: "0"
   text = "Use the keys ↑ and ↓ to navigate between the boot options."
 }
 
-#Show the more options to user using the label component
-+label {
-  top = 88%
-  left = 0%
-  width = 100%
-  align = "center"
-  color = "#ffffff"
-  font = "DejaVu Sans Bold 14"
-  text = "Press Enter to choice, C for command-line or E to edit the commands before booting."
++ image {
+  top = 100%-50
+  left = 50%-240
+  width = 480
+  height = 42
+  file = "info.png"
 }
