@@ -1,0 +1,81 @@
+# GRUB2 Regata OS Theme
+# Inspired by Tela theme for grub.
+
+# Global Property
+title-text: ""
+title-color: "#fff"
+title-font: "DejaVu Sans Regular 18"
+
+desktop-image: "background.jpg"
+desktop-color: "#000000"
+
+terminal-font: "Gnu Unifont Mono Regular 16"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Show logo
++ image {
+  #width = 100
+  #height = 100
+  #left = 46%
+  left = 50%-48
+  top = 10%
+  file = "logo.png"
+}
+
+# Show the boot menu
++ boot_menu {
+  left = 25%
+  top = 30%
+  width = 50%
+  height = 60%
+  item_font = "DejaVu Sans Regular 16"
+  item_color = "#ffffff"
+  icon_width = 40
+  icon_height = 40
+  item_icon_space = 24
+  item_height = 48
+  item_padding = 8
+  item_spacing = 16
+  selected_item_pixmap_style = "select_*.png"
+  selected_item_font = "DejaVu Sans Regular 16"
+  selected_item_color= "#ffffff"
+}
+
+# Show a countdown message using the label component
++ label {
+  top = 80%
+  left = 32%
+  width = 30%
+  align = "center"
+  id = "__timeout__"
+  text = "Booting in %d seconds..."
+  color = "#ffffff"
+  font = "DejaVu Sans Regular 18"
+}
+
+#Show the options to user using the label component
++label {
+  top = 84%
+  left = 0%
+  width = 100%
+  align = "center"
+  color = "#ffffff"
+  font = "DejaVu Sans Bold 14"
+  text = "Use the keys ↑ and ↓ to navigate between the boot options."
+}
+
+#Show the more options to user using the label component
++label {
+  top = 88%
+  left = 0%
+  width = 100%
+  align = "center"
+  color = "#ffffff"
+  font = "DejaVu Sans Bold 14"
+  text = "Press Enter to choice, C for command-line or E to edit the commands before booting."
+}
